@@ -1,3 +1,5 @@
+![CI / Automated Testing](https://github.com/banisond/ecg-signal-processing-python/actions/workflows/test.yml/badge.svg)
+
 # Biomedical ECG Signal Processing & Peak Detection Starter Kit
 
 Production-grade Python pipeline for ECG baseline wander removal, noise filtering, and R-peak / HRV extraction.
