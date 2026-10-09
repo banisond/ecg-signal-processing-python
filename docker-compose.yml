@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ecg-api:
+    build: .
+    container_name: ecg_signal_processing_api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+    restart: unless-stopped
