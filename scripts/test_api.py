@@ -3,8 +3,7 @@ import json
 import urllib.request
 
 API_URL = "http://127.0.0.1:8000/v1/process-ecg"
-DATA_PATH = "data/sample_ecg.csv"
-
+DATA_PATH = "data/sample_ecg_10s.csv"
 
 def run_test():
     print(f"Reading sample data from {DATA_PATH}...")

@@ -45,13 +45,13 @@ def process_ecg(payload: ECGRequest):
     filtered = apply_notch_filter(bandpassed, powerline_freq=payload.powerline_freq, fs=payload.sampling_rate)
     
     # 2. Detect R-Peaks
-    peaks = detect_r_peaks(filtered, fs=payload.sampling_rate)
+    peaks = detect_r_peaks(filtered, sampling_rate=payload.sampling_rate)
     
     # 3. Extract HRV Metrics
-    metrics = calculate_hrv_metrics(peaks, fs=payload.sampling_rate)
-    
+    metrics = calculate_hrv_metrics(peaks, sampling_rate=payload.sampling_rate) 
+
     return ECGResponse(
         filtered_signal=filtered.tolist(),
-        r_peak_indices=peaks.tolist(),
+        r_peak_indices=peaks,
         metrics=metrics
     )
