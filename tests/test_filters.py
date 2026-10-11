@@ -19,8 +19,8 @@ def test_peak_detection_synthetic():
     for idx in peak_indices:
         signal[idx] = 2.0  # Spike voltage
         
-    detected = detect_r_peaks(signal, fs=fs)
-    metrics = calculate_hrv_metrics(detected, fs=fs)
+    detected = detect_r_peaks(signal, sampling_rate=fs)
+    metrics = calculate_hrv_metrics(detected, sampling_rate=fs)
     
     assert len(detected) == len(peak_indices)
     assert metrics["mean_hr_bpm"] == 72.0
