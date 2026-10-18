@@ -1,5 +1,7 @@
 ![CI / Automated Testing](https://github.com/banisond/ecg-signal-processing-python/actions/workflows/test.yml/badge.svg)
 
+![ECG Signal Pipeline](assets/ecg_plot.png)
+
 # Biomedical ECG Signal Processing & Peak Detection Starter Kit
 
 A production-grade Python package and FastAPI server for biomedical signal processing, digital noise filtering, R-peak detection, and Heart Rate Variability (HRV) metrics calculation. Designed for digital health startups, wearable integrations, and medical device prototypes.
@@ -86,4 +88,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ```
 
-```
+
